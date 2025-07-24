@@ -1,17 +1,22 @@
 # Orbital Debris Detection and Collision Avoidance System
 
-A simple web application to simulate satellite and debris tracking in space. Uses AI to predict collisions and suggest possible avoidance maneuvers.
+#  Orbital Collision Prediction System
+
+A Python-based simulation to track satellite positions using real TLE data and predict potential collisions with space debris. The system visualizes the paths and suggests basic avoidance maneuvers when risks are detected.
 
 ## Features
 
-- Predicts potential collisions between satellites and debris
-- Shows real-time 3D visualization using CesiumJS
-- Simple AI prediction using linear regression
-- Built with Flask (Python backend) and HTML/CSS/JavaScript frontend
+- **Satellite Tracking**: Uses [Skyfield](https://rhodesmill.org/skyfield/) and real Two-Line Element (TLE) data to compute the orbital path of the International Space Station (ISS).
+- **Debris Simulation**: Simulates future positions of orbital debris (placeholder for AI-based prediction).
+- **Collision Detection**: Identifies potential collision risks based on proximity threshold.
+- **Avoidance Maneuver**: Suggests simple maneuver positions to avoid predicted collisions.
+- **Visualization**: Plots satellite and debris trajectories using Matplotlib.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- Python (Flask)
-- JavaScript (CesiumJS)
-- Skyfield (for satellite position)
-- scikit-learn (for AI prediction)
+- **Python**
+- **Skyfield** for orbital mechanics
+- **Matplotlib** for plotting
+- Custom modules:
+  - `debris_predictor.py` – Predicts future debris positions
+  - `collision_avoidance.py` – Provides basic maneuver logic
